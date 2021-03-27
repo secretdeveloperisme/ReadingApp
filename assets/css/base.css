@@ -1,0 +1,56 @@
+:root{
+  --primary-color : #14425d;
+  --primary-pale-color: #2f566d;
+  --white : #fff;
+  --text-color : #333;
+  --background-color: #cccccc;
+  --nav-color : #d63031;
+  --american-river: #636e72;
+  --electric-blue: #0984e3;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto',  sans-serif;
+}
+*{
+  box-sizing: inherit;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+button{
+  border: none;
+  outline: none;
+}
+h1,h2{
+  margin: 0;
+}
+.grid-row{
+  width: 100%;
+  display: flex;
+}
+header{
+  margin: 0 !important;
+}
+.grid-col-1 {width: 8.33%;}
+.grid-col-2 {width: 16.66%;}
+.grid-col-3 {width: 25%;}
+.grid-col-4 {width: 33.33%;}
+.grid-col-5 {width: 41.66%;}
+.grid-col-6 {width: 50%;}
+.grid-col-7 {width: 58.33%;}
+.grid-col-8 {width: 66.66%;}
+.grid-col-9 {width: 75%;}
+.grid-col-10 {width: 83.33%;}
+.grid-col-11 {width: 91.66%;}
+.grid-col-12 {width: 100%;}
