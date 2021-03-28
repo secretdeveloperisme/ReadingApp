@@ -3,7 +3,7 @@
   --primary-pale-color: #2f566d;
   --white : #fff;
   --text-color : #333;
-  --background-color: #cccccc;
+  --background-color: #e6e6e6;
   --nav-color : #d63031;
   --american-river: #636e72;
   --electric-blue: #0984e3;
@@ -35,12 +35,17 @@ button{
 h1,h2{
   margin: 0;
 }
+
+header{
+  margin: 0 !important;
+}
+.gird{
+  width: 1200px;
+  max-width: 100%;
+}
 .grid-row{
   width: 100%;
   display: flex;
-}
-header{
-  margin: 0 !important;
 }
 .grid-col-1 {width: 8.33%;}
 .grid-col-2 {width: 16.66%;}
@@ -54,3 +59,8 @@ header{
 .grid-col-10 {width: 83.33%;}
 .grid-col-11 {width: 91.66%;}
 .grid-col-12 {width: 100%;}
+.grid-col-2-10{
+  width: 20%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
