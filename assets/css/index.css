@@ -386,6 +386,9 @@ nav {
 .updated-book-row__name > h3,i{
   font-size: 1.6rem;
   font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .updated-book-row__category{
   font-size: 1.6rem;
