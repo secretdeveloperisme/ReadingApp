@@ -413,6 +413,7 @@ nav {
 .reading-book{
   background-color: #ecf0f1;
   padding: 5px 5px;
+  border-radius: 5px;
 }
 .reading-book__title{
   font-size: 2rem;
@@ -432,9 +433,11 @@ nav {
 .reading-book-row__title > p{
   margin: 0;
   text-overflow: ellipsis;
-  color: red;
   overflow: hidden;
   white-space: nowrap;
+}
+.reading-book-row__title a{
+  color: red;
 }
 .reading-book-row__resume {
   text-align: center;
@@ -445,6 +448,8 @@ nav {
 .book-categories{
   background-color: #ecf0f1;
   margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 5px;
 }
 .book-categories__title{
   font-size: 2rem;
@@ -455,10 +460,46 @@ nav {
   margin: 0;
 }
 .book-categories__item{
-  padding: 5px 3px;
+  text-align: center;
+}
+.book-categories__item a{
+  display: block;
+  padding: 5px 0px;
 }
 .book-categories__item a:hover{
   color: var(--american-river);
+  text-decoration: underline;
+}
+.book-footer{
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+}
+.book-footer-description{
+
+  font-size: 2rem;
+}
+.book-footer-contact{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.book-footer-contact li{
+  height: fit-content;
+  background-color: #cdcdcd;
+}
+.book-footer-contact li + li{
+  margin-left: 10px;
+}
+.book-footer-contact a{
+  display: inline-block;
+  padding: 10px 0;
+}
+.book-footer-contact a:hover{
+  color: red;
+}
+.book-footer-contact a > p{
+  margin: 0;
 }
 /* @media only screen and (max-width: 478px){
   .grid-col-5-10{
