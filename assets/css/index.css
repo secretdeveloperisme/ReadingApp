@@ -121,6 +121,7 @@ nav {
   padding: 5px 10px;
   width: 100%;
   text-align: center;
+  border-radius: 5px;
 }
 .dropdown-content a:hover{
   background-color: #14425d;
@@ -227,8 +228,13 @@ nav {
 .slideshow-btn{
   position: absolute;
   background-color: transparent;
-  font-size: 3rem;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+}
+.slideshow-btn i{
+  font-size: 3rem;
 }
 .slideshow-btn:hover{
   background-color: rgba(0, 0, 0, 0.3);
@@ -487,6 +493,15 @@ nav {
 .book-footer-contact li{
   height: fit-content;
   background-color: #cdcdcd;
+  border: 1px solid black;
+  padding: 0 5px;
+  transition: all .5s linear;
+}
+.book-footer-contact li:hover{
+  border-color: red;
+}
+.book-footer-contact li:hover a{
+  color: red;
 }
 .book-footer-contact li + li{
   margin-left: 10px;
@@ -494,9 +509,7 @@ nav {
 .book-footer-contact a{
   display: inline-block;
   padding: 10px 0;
-}
-.book-footer-contact a:hover{
-  color: red;
+  transition: all .5s linear;
 }
 .book-footer-contact a > p{
   margin: 0;
