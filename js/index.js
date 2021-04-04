@@ -62,4 +62,35 @@ $(document).ready(function () {
   setInterval(function(){
     nextSlide();
   },3000);
+  //render Book product 
+  let $bookProduct = $(".book-product-items");
+   async function renderBooks() {
+    let books = []; 
+    await $.ajax({
+      type: "GET",
+      url: "/ReadingBook/php/getAllBooks.php",
+      data: "",
+      dataType: "text",
+      success: function (response) {
+        books = JSON.parse(response);
+      }
+    }); 
+    $bookProduct.html("");
+    console.log(books);
+    books.forEach(function(value,index,array){
+      let bookItem = document.createElement("a");
+      bookItem.href ="";
+      bookItem.classList.add("book-product-item__link");
+      bookItem.classList.add("grid-col-2-10");
+      bookItem.innerHTML = `
+      <div class="book-product-item">
+        <div class="product-item__img" style="background-image: url(${value.url_image});"></div>
+        <span class="product-item__name">${value.book_title}</span>
+        <span class="product-item__favorite"><i class="fas fa-check"></i><span>Yêu thích</span></span>
+      </div>`;
+      $($bookProduct).append(bookItem);
+    })
+  }
+  renderBooks();
 });
+
