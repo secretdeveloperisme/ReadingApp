@@ -1,0 +1,27 @@
+.nav-configuration{
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+.nav-configuration-item{
+  display: flex;
+}
+.nav-configuration-item + .nav-configuration-item{
+  margin-top: 10px;
+}
+.nav-configuration__label{
+  font-size: 2rem;
+  min-width: 100px;
+  max-width: 100px;
+}
+.nav-configuration__select{
+  font-size: 2rem;
+  width: 200px;
+}
+.nav-configuration-full-frame{
+  font-size: 2rem;
+}
+.nav-configuration-full-frame input{
+  width: 2rem;
+  height: 2rem;
+}
